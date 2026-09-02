@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+
+    <ScrollView
+        android:layout_above="@id/navbarnya"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+
+                android:id="@+id/navBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/outline_add_24"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="3"
+                    android:drawableRight="@drawable/outline_arrow_drop_down_24"
+                    android:gravity="center"
+                    android:text="JTIKPNUP" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/menu"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/outline_alternate_email_24"
+                    android:gravity="center"
+                    android:text="" />
+
+
+                <TextView
+                    android:id="@+id/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/outline_clear_all_24"
+                    android:gravity="center"
+                    android:text="" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/wadahProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/navBar"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/jtik" />
+
+                <TextView
+                    android:id="@+id/textJTIK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img"
+                    android:text="JTIK PNUP" />
+
+
+                <LinearLayout
+                    android:id="@+id/wadahPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textJTIK"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@id/img"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/teks90"
+                            android:text="JTIK PNUP" />
+
+                        <TextView
+                            android:id="@+id/teks90"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="90"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/teks90"
+                            android:text="Postingan"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/teksPengikut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.018"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/teksPengikut"
+                            android:text="pengikut"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/teksMengikuti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.018"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/teksMengikuti"
+                            android:text="mengikuti"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wadahProfile"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Peruguran Tinggi dan Universitas" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Official Account" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/teksDashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bio"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img"
+                    android:text="Dashboard Profesional"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img"
+                    android:text="Fitur baru kini tersedia" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tmbol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teksDashboard"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E4E5E6"
+                    android:drawableTint="@color/white"
+                    android:text="Edit Profil"
+                    android:textColor="@color/black"
+                    app:cornerRadius="10dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E4E5E6"
+                    android:drawableTint="@color/white"
+                    android:text="Bagikan Profil"
+                    android:textColor="@color/black"
+                    app:cornerRadius="10dp" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/scrolHori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tmbol"
+                android:scrollbars="none">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/jtik" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/logoppl" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/jtik" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/logoppl" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/jtik" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+
+                        android:src="@drawable/logoppl" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/jtik" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/logoppl" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/jtik" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/logoppl" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/jtik" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/navbarnya"
+                android:layout_below="@id/scrolHori"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/naruto" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/narutolg" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/baryon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/naruto" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/narutolg" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/baryon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/naruto" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/narutolg" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/baryon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/naruto" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/narutolg" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/baryon" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <!--    di bawah adalah menu-->
+    <LinearLayout
+        android:id="@+id/navbarnya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/home_24"
+            android:gravity="center"
+            android:text="Home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/fingerprint_24"
+            android:gravity="center"
+            android:text="Reels" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/outline_cancel_schedule_send_24"
+            android:gravity="center"
+            android:text="Message" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/baseline_search_24"
+            android:gravity="center"
+            android:text="Search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="?actionBarItemBackground"
+            android:drawableTop="@drawable/outline_account_circle_24"
+            android:gravity="center"
+            android:text="Profile" />
+
+    </LinearLayout>
+
+</RelativeLayout>
