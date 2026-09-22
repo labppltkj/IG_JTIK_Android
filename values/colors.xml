@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palet Biru Utama -->
+    <color name="blue_primary">#1A73E8</color> <!-- Biru cerah standar Google -->
+    <color name="blue_primary_container">#D2E3FC</color> <!-- Biru muda untuk background elemen -->
+
+    <!-- Warna Pendukung -->
+    <color name="blue_secondary">#415F91</color>
+    <color name="blue_tertiary">#5B5C7E</color>
+
+    <!-- Warna Background & Permukaan -->
+    <color name="blue_background">#F8F9FA</color>
+    <color name="blue_surface">#FFFFFF</color>
+
+    <!-- Warna Teks / Kontras -->
+    <color name="color_on_primary">#FFFFFF</color> <!-- Teks putih di atas background biru -->
+    <color name="color_on_background">#1F1F1F</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

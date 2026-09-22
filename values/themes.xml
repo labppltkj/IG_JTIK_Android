@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Theme 1: Menggunakan Toolbar / ActionBar -->
+    <style name="Theme.MyApp.Toolbar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Warna utama -->
+        <item name="colorPrimary">#800000</item>
+        <item name="colorPrimaryVariant">#600000</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Warna status bar -->
+        <item name="android:statusBarColor">#600000</item>
+
+        <!-- Warna background -->
+        <item name="android:windowBackground">#FFFFFF</item>
+
+        <item name="android:textColorPrimary">@color/black</item>
+
+    </style>
+
+
+    <!-- Theme 2: Tanpa Toolbar / ActionBar -->
+    <style name="Theme.MyApp.NoToolbar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Warna utama -->
+        <item name="colorPrimary">#800000</item>
+        <item name="colorPrimaryVariant">#600000</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Warna status bar -->
+        <item name="android:statusBarColor">#600000</item>
+
+        <!-- Warna background -->
+        <item name="android:windowBackground">#FFFFFF</item>
+
+    </style>
+
+    <style name="CircleImage" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>
