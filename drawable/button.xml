@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Warna latar belakang biru -->
+    <solid android:color="#f1f2f6" />
+
+    <!-- Melengkungkan sudut (opsional) -->
+    <corners android:radius="12dp" />
+
+    <!-- Mengatur garis tepi/stroke (opsional) -->
+    <stroke
+        android:width="2dp"
+        android:color="#f1f2f6" />
+
+    <!-- Mengatur jarak/padding (opsional) -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" />
+
+</shape>
